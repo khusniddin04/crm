@@ -17,6 +17,7 @@ function Header() {
           </ul>
           <NavLink>
             <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" />
           </NavLink>
           
           <ul>
