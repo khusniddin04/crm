@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.x{
+    margin-right: 15px;
+    margin-top: -30px;
+     width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.x:hover{
+    cursor: pointer;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form {
+    width: 770px;
+    height: 600px;
+    flex-shrink: 0;
+    background: #F4F5F7;
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+label {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: block;
+    margin-top: 25px;
+    font-size: 18px;
+}
+.fa-solid{
+    margin-right: 5px;
+    color: #2F76E6;
+}
+input {
+    width: 511px;
+    height: 43px;
+    flex-shrink: 0;
+    background: #EBECEF;
+    border: none;
+    margin-top: 8px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+select{
+    width: 511px;
+    height: 43px;
+    flex-shrink: 0;
+    background: #EBECEF;
+    border: none;
+    font-size: 15px;
+    margin-top: 8px;
+    padding-left: 10px;
+
+}
+button {
+    width: 113px;
+    height: 38px;
+    flex-shrink: 0;
+    background-color: #2F76E6;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s
+}
+button:hover{
+    background-color: white;
+    color: #2F76E6;
+    border: 1px solid #2F76E6;
+    transition: 0.5s
+}
