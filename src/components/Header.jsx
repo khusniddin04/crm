@@ -10,7 +10,6 @@ function Header() {
           <ul>
             <li>
               <NavLink to="/">HOME</NavLink>
-              <NavLink to="/">HOME</NavLink>
             </li>
             <li>
               <NavLink to="/about">ABOUT</NavLink>
@@ -18,13 +17,16 @@ function Header() {
           </ul>
           <NavLink>
             <img src={logo} alt="logo" />
-            <img src={logo} alt="logo" />
           </NavLink>
           
           <ul>
             <li className='nav__list'>
-              <NavLink to="/qabul">QABUL</NavLink>
-              <NavLink to="/qabul">REGISTOR</NavLink>
+              <NavLink to="/courses">COURSES +</NavLink> 
+
+            </li>
+            <li className='nav__list'>
+            <NavLink to="/register">REGISTOR</NavLink>
+
             </li>
           </ul>
         </nav>

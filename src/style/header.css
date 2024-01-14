@@ -30,6 +30,7 @@
     border: 1px solid #2F76E6;
 }
 .nav__list > a:hover {
+    background-color: #fff !important;
     background-color: #2F76E6 !important;
     color: #ffffff !important;
     border-radius: 5px;
