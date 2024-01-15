@@ -2,9 +2,10 @@ import React from 'react'
 import "../style/form.css"
 
 function QabulPage() {
+  
   return (
     <div className='wrapper'>
-    <form className='form'>
+    <form className='form' onSubmit={handlClick}>
         <div className="card">
             <h3 className='title'>REGISTER</h3>                  
         </div>
