@@ -11,7 +11,22 @@ function Courses() {
 
     function getUserInfo(e) {
         e.preventDefault()
-        
+        let ready_to_shoot = {
+          course_name: course_name.current.value,
+          start: start.current.value,
+          duration: duration.current.value,
+          teacher: teacher.current.value,
+          course_time_from: course_time_from.current.value,
+          course_time_to: course_time_to.current.value
+        }
+        fetch("https://nurcrmapi.pythonanywhere.com/couses/", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(ready_to_shoot)
+        })
     }
   return (
     <div className='form__wrapper'>
@@ -33,10 +48,10 @@ function Courses() {
         <input id='teacher' type="text" ref={teacher} required/>
 
         <label htmlFor="time_from">Course time from</label>
-        <input id='time_from' type="time" ref={course_time_from} required/>
+        <input id='time_from' type="date" ref={course_time_from} required/>
 
         <label htmlFor="time_to">Course time to</label>
-        <input id='time_to' type="time" ref={course_time_to} required/>
+        <input id='time_to' type="date" ref={course_time_to} required/>
 
         <br />
         <button>Submit</button>

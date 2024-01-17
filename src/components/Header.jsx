@@ -25,7 +25,7 @@ function Header() {
 
             </li>
             <li className='nav__list'>
-            <NavLink to="/register">REGISTOR</NavLink>
+            <NavLink to="/register">REGISTER</NavLink>
 
             </li>
           </ul>
