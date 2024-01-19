@@ -12,6 +12,7 @@ import WebDisPage from './pages/WebDisPage';
 import GraficPage from './pages/GraficPage';
 import EnglishPage from './pages/EnglishPage';
 import Courses from './pages/Courses';
+import CoursesPage from './pages/CoursesPage';
 
 
 const appRouter = createBrowserRouter([
@@ -49,8 +50,12 @@ const appRouter = createBrowserRouter([
           element:<EnglishPage/>
         },
         {
-          path:"/courses",
+          path:"/create-course",
           element:<Courses/>
+        },
+        {
+          path:"/course/:userID",
+          element: <CoursesPage/>
         }
       ]
     }

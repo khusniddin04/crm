@@ -21,7 +21,7 @@ function Header() {
           
           <ul>
             <li className='nav__list'>
-              <NavLink to="/courses">COURSES +</NavLink> 
+              <NavLink to="/create-course">COURSES +</NavLink> 
 
             </li>
             <li className='nav__list'>
