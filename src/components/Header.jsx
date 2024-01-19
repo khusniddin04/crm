@@ -14,6 +14,9 @@ function Header() {
             <li>
               <NavLink to="/about">ABOUT</NavLink>
             </li>
+            <li>
+              <NavLink to="/users">USERS</NavLink>
+            </li>
           </ul>
           <NavLink>
             <img src={logo} alt="logo" />

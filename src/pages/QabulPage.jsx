@@ -41,12 +41,12 @@ function QabulPage() {
         <input ref={phone} id='phone' type="number" placeholder='Telephone' required/>
 
         <label htmlFor="kurs"><i className="fa-solid fa-list"></i>Kurs</label>
-        <select ref={course} name="kurs"  required>
+        <select ref={course} name="kurs" >
             <optgroup label='Choose Kurs' >
-                <option value="front" >Frontend</option>
-                <option value="back" >Backend</option>
-                <option value="gr">Grafik dizayn</option>
-                <option value="wg">Web dizayn</option>
+                <option value="Frontend" >Frontend</option>
+                <option value="Backend" >Backend</option>
+                <option value="Grafik_dizayn">Grafik dizayn</option>
+                <option value="Web_dizayn">Web dizayn</option>
             </optgroup>
         </select>
         <label htmlFor="data"><i className="fa-solid fa-calendar-days"></i>Date</label>

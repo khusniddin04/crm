@@ -12,6 +12,7 @@ import WebDisPage from './pages/WebDisPage';
 import GraficPage from './pages/GraficPage';
 import EnglishPage from './pages/EnglishPage';
 import Courses from './pages/Courses';
+import UsersPage from './pages/UsersPage';
 
 
 const appRouter = createBrowserRouter([
@@ -51,6 +52,10 @@ const appRouter = createBrowserRouter([
         {
           path:"/courses",
           element:<Courses/>
+        },
+        {
+          path:"/users",
+          element:<UsersPage/>
         }
       ]
     }
