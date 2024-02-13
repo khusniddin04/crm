@@ -7,9 +7,9 @@ function UsersPage() {
     getUsers()
   }, [])
   async function getUsers() {
-    let fatchData = await fetch("https://nurcrmapi.pythonanywhere.com/users/")
+    let fatchData = await fetch("https://crmpanel-yle6.onrender.com/users/")
     let json = await fatchData.json()
-    setUser(json)
+    setUser(json.data)
     console.log(json);
   }
   return (
@@ -17,12 +17,11 @@ function UsersPage() {
       <div className="container">
         {user?.map((item) => {
           return (
-            <div className="child">
+            <div className="child" key={item.courses_ref_id}>
               <p>{item.id}</p>
               <h4>{item.full_name}</h4>
-              <h4>{item.phone}</h4>
-              <h5>{item.course}</h5>
-              <p>{item.reception_time}</p>
+              <h4>{item.contact}</h4>
+              
               
             </div>
           )

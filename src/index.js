@@ -12,11 +12,7 @@ import WebDisPage from './pages/WebDisPage';
 import GraficPage from './pages/GraficPage';
 import EnglishPage from './pages/EnglishPage';
 import Courses from './pages/Courses';
-<<<<<<< HEAD
-import CoursesPage from './pages/CoursesPage';
-=======
 import UsersPage from './pages/UsersPage';
->>>>>>> d6ae4606df0d16ea58c81a0983a1c39d8821416e
 
 
 const appRouter = createBrowserRouter([
@@ -58,13 +54,8 @@ const appRouter = createBrowserRouter([
           element:<Courses/>
         },
         {
-<<<<<<< HEAD
-          path:"/course/:userID",
-          element: <CoursesPage/>
-=======
           path:"/users",
           element:<UsersPage/>
->>>>>>> d6ae4606df0d16ea58c81a0983a1c39d8821416e
         }
       ]
     }
