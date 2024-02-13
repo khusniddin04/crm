@@ -3,11 +3,12 @@ import "../style/couses.css";
 
 function Courses() {
   let course = useRef();
-  let start = useRef();
-  let duration = useRef();
-  let teacher = useRef();
-  let course_time_from = useRef();
-  let course_time_to = useRef();
+  let course_time = useRef();
+  let course_month = useRef();
+  let course_price = useRef();
+  // let course_time_from = useRef();
+  // let course_time_to = useRef();
+  // let studetns = useRef();
   let modal = useRef();
   const[selectedCourse, setSelectedCourse]=useState("")
   function openModal() {
@@ -22,45 +23,47 @@ function Courses() {
     modal.current.classList.add("openModal");
     e.preventDefault();
     setSelectedCourse(course.current.value)
-    // let ready_to_shoot = {
-    //   course_name: course.current.value,
-    //   start: start.current.value,
-    //   duration: duration.current.value,
-    //   teacher: teacher.current.value,
-    //   course_time_from: course_time_from.current.value,
-    //   course_time_to: course_time_to.current.value
-    // }
-    // fetch("https://nurcrmapi.pythonanywhere.com/couses/", {
-    //   method: "POST",
-    //   headers: {
-    //     Accept: "application/json",
-    //     "Content-Type": "application/json"
-    //   },
-    //   body: JSON.stringify(ready_to_shoot)
-    // })
+    let ready_to_shoot = {
+      course_name: course.current.value,
+      course_time: course_time.current.value,
+      course_month: course_month.current.value,
+      course_price: course_price.current.value,
+      // course_time_from: course_time_from.current.value,
+      // course_time_to: course_time_to.current.value,
+      // studetns: chackedUser,
+
+    }
+    fetch("https://crmpanel-yle6.onrender.com/courses", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(ready_to_shoot)
+    })
   }
   const [getusers, setGetUsers] = useState(null);
   const [filteredUser, setFilteredUser] = useState(null);
+  // const [chackedUser, setCheckedUser] = useState(null)
   useEffect(() => {
     async function getUsers() {
-      let fetchData = await fetch("https://nurcrmapi.pythonanywhere.com/users/");
+      let fetchData = await fetch("https://crmpanel-yle6.onrender.com/courses");
       let json = await fetchData.json();
       setGetUsers(json);
-      let filtered_user_by_course = json.filter((item)=> item.course === selectedCourse)
-      setFilteredUser(filtered_user_by_course)
+      // let filtered_user_by_course = json.filter((item)=> item.course === selectedCourse)
+      // setFilteredUser(filtered_user_by_course)
     }
     getUsers()
   }, [selectedCourse]);
   
-  function getUserByCourse(e) {
-    e.preventDefault()
-    let checkedUsers = document.querySelectorAll(".modal__card input[type=checkbox]:checked")
-    for (let i = 0; i < filteredUser.length; i++) {
-      console.log(filteredUser[i]);
-      console.log(checkedUsers[i]);
+  // function getUserByCourse(e) {
+  //   e.preventDefault()
+  //   setCheckedUser = document.querySelectorAll(".modal__card input[type=checkbox]:checked")
+  //   console.log(setCheckedUser);
+  // //   for (let i = 0; i < filteredUser.length; i++) {
       
-    }
-  }
+  // //   }
+  // }
 
   return (
     <div className="form__wrapper">
@@ -69,7 +72,7 @@ function Courses() {
           X
         </span>
         <div className="modal__card">
-          <form onSubmit={getUserByCourse}>
+          <form >
             {filteredUser?.map((item) => {
               return (
                 <div key={item.id} id={item.id}>
@@ -101,19 +104,19 @@ function Courses() {
         {/* <input id='name' type="text" ref={course_name} placeholder='Course Name'required /> */}
         <br />
         <label htmlFor="start">Start</label>
-        <input id="start" type="date" ref={start}  />
+        <input id="start" type="date" ref={course_time}  />
 
         <label htmlFor="duration">Duration</label>
-        <input id="duration" type="number" ref={duration}  />
+        <input id="duration" type="number" ref={course_month}  />
 
         <label htmlFor="teacher">Teacher</label>
-        <input id="teacher" type="text" ref={teacher}  />
+        <input id="teacher" type="text" ref={course_price}  />
 
-        <label htmlFor="time_from">Course time from</label>
+        {/* <label htmlFor="time_from">Course time from</label>
         <input id="time_from" type="time" ref={course_time_from}  />
 
         <label htmlFor="time_to">Course time to</label>
-        <input id="time_to" type="time" ref={course_time_to}  />
+        <input id="time_to" type="time" ref={course_time_to}  /> */}
 
         <br />
         <button onClick={openModal} type="submit">
