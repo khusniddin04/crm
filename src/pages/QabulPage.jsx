@@ -44,14 +44,14 @@ function QabulPage() {
 
         {/* <label htmlFor="kurs"><i className="fa-solid fa-list"></i>Kurs</label>
         <select ref={course} name="kurs" >
-            <optgroup label='Choose Kurs' >
+            
                 <option value="Frontend" >Frontend</option>
                 <option value="Backend" >Backend</option>
                 <option value="Grafik_dizayn">Grafik dizayn</option>
                 <option value="Web_dizayn">Web dizayn</option>
-            </optgroup>
+            
         </select>
-        <label htmlFor="data"><i className="fa-solid fa-calendar-days"></i>Date</label>
+        {/*<label htmlFor="data"><i className="fa-solid fa-calendar-days"></i>Date</label>
         <input ref={reception_time}  type="date" required/>  */}<br />
         <button type='submit'>Submit</button>
     </form>

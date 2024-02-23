@@ -17,7 +17,7 @@ function Header() {
             <NavLink to="/teachers">O'qituvchilar</NavLink>
           </li>
           <li>
-            <NavLink to="/courses">Guruhlar</NavLink>
+            <NavLink to="/about">Guruhlar</NavLink>
           </li>
           <li>
             <NavLink to="/users">Students</NavLink>
@@ -29,6 +29,7 @@ function Header() {
       </nav>
     </div>
   </header>
+
   )
 }
 

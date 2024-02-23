@@ -10,8 +10,10 @@ import Courses from './pages/Courses';
 import UsersPage from './pages/UsersPage';
 import UserPage from './pages/UserPage';
 import TeachersPage from './pages/TeachersPage';
-import CoursesPage from './pages/CoursesPage';
 import FinancePage from './pages/FinancePage';
+import CoursesPage from './pages/CoursesPage';
+import AboutPage from './pages/AboutPage';
+
 
 
 const appRouter = createBrowserRouter([
@@ -25,6 +27,10 @@ const appRouter = createBrowserRouter([
           element:<HomePage/>
         },
         {
+          path:"/user",
+          element:<UserPage/>
+        },
+        {
           path:"/teachers",
           element:<TeachersPage/>
         },
@@ -33,9 +39,10 @@ const appRouter = createBrowserRouter([
           element:<QabulPage/>
         },
         {
-          path:"/user/:userID",
-          element:<UserPage/>
+          path:"/webs/:userID",
+          element:<CoursesPage/>
         },
+
         {
           path:"/create-course",
           element:<Courses/>
@@ -45,12 +52,12 @@ const appRouter = createBrowserRouter([
           element:<UsersPage/>
         },
         {
-          path:"/courses",
-          element:<CoursesPage/>
-        },
-        {
           path:"/finance",
           element:<FinancePage/>
+        },
+        {
+          path:"/about",
+          element:<AboutPage/>
         }
 
       ]
@@ -59,9 +66,9 @@ const appRouter = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <RouterProvider router={appRouter} />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 

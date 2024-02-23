@@ -1,0 +1,102 @@
+.map_user {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 15px;
+    background-color: #2F76E6;
+    color: white;
+    padding-bottom: 5px;
+    height: 40px;
+    padding: 10px ;
+    border-radius: 15px;
+}
+.map_user:hover{
+    -webkit-box-reflect: below 1px liner-gradient(transparent, #0005);
+    box-shadow: 0 0 5px #2F76E6, 0 0 15px #2F76E6, 0 0 25px #2F76E6, 0 0 100px #2F76E6 ;
+}
+
+.dior {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+    padding: 0 10px;
+    width: 350px;
+    height: 430px;
+    overflow-y: scroll;
+    margin-left: -50px;
+    position: relative;
+}
+.qwe{
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 70px;
+    padding: 20px ;
+
+}
+
+.header_course{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-bottom: 15px;
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 5px;
+    height: 40px;
+    padding: 10px;
+}
+.big {
+    display: grid;
+    grid-template-columns: 94%;
+}
+
+ .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+.rio {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000000;
+    
+}
+.rio i{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.rio i:nth-of-type(2){
+    border-left: 1px solid black;
+    padding-left: 3px;
+}
+.one {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    /* margin-top: 5px; */
+    /* padding-bottom: 3px; */
+}
+.one:nth-child(odd){
+    background-color: #437ab4a0;
+}
+.map{
+    margin-top: 10px;
+
+}
+
+.one h3{
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.417);
+    /* margin-bottom: 5px; */
+    margin-top: 5px;
+
+}
+.one h3:nth-of-type(2){
+    opacity: 0.7;
+    font-size: 16px;
+}
+.one h3:nth-of-type(1) img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}

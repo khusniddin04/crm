@@ -111,8 +111,8 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 105px;
-    right: 527px;
+    top: 0px;
+    right: 0px;
     background-color: red;
     display: flex;
     align-items: center;
