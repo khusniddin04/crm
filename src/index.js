@@ -5,14 +5,13 @@ import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
 import QabulPage from './pages/QabulPage';
-import WebDasPage from './pages/WebDasPage';
-import WebDisPage from './pages/WebDisPage';
-import GraficPage from './pages/GraficPage';
-import EnglishPage from './pages/EnglishPage';
 import Courses from './pages/Courses';
 import UsersPage from './pages/UsersPage';
+import UserPage from './pages/UserPage';
+import TeachersPage from './pages/TeachersPage';
+import CoursesPage from './pages/CoursesPage';
+import FinancePage from './pages/FinancePage';
 
 
 const appRouter = createBrowserRouter([
@@ -26,28 +25,16 @@ const appRouter = createBrowserRouter([
           element:<HomePage/>
         },
         {
-          path:"/about",
-          element:<AboutPage/>
+          path:"/teachers",
+          element:<TeachersPage/>
         },
         {
           path:"/register",
           element:<QabulPage/>
         },
         {
-          path:"/web/:userID",
-          element:<WebDasPage/>
-        },
-        {
-          path:"/webdesigner/:userID",
-          element:<WebDisPage/>
-        },
-        {
-          path:"/grafic/:userID",
-          element:<GraficPage/>
-        },
-        {
-          path:"/english/:userID",
-          element:<EnglishPage/>
+          path:"/user/:userID",
+          element:<UserPage/>
         },
         {
           path:"/create-course",
@@ -56,7 +43,16 @@ const appRouter = createBrowserRouter([
         {
           path:"/users",
           element:<UsersPage/>
+        },
+        {
+          path:"/courses",
+          element:<CoursesPage/>
+        },
+        {
+          path:"/finance",
+          element:<FinancePage/>
         }
+
       ]
     }
 ])

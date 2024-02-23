@@ -102,13 +102,13 @@ function Courses() {
         <input id="start" type="date" ref={start}  /> */}
 
         <label htmlFor="course_month">Course month</label>
-        <input id="course_month" type="number" ref={course_month}  />
+        <input id="course_month" type="number"  ref={course_month}  />
 
         <label htmlFor="course_price">Course price</label>
         <input id="course_price" type="number" ref={course_price}  />
 
         <label htmlFor="course_time">Course time </label>
-        <input id="course_time" type="time" ref={course_time}  />
+        <input id="course_time" type="time" placeholder="Time" ref={course_time}  />
 
         
         <br />

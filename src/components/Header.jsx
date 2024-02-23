@@ -1,40 +1,34 @@
 import React from 'react'
 import "../style/header.css"
 import { NavLink } from 'react-router-dom'
-import logo from "../image/logo2-removebg-preview.png"
 function Header() {
   return (
     <header className='header'>
-      <div className="container">
-        <nav className='header__nav'>
-          <ul>
-            <li>
-              <NavLink to="/">HOME</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">ABOUT</NavLink>
-            </li>
-            <li>
-              <NavLink to="/users">USERS</NavLink>
-            </li>
-          </ul>
-          <NavLink>
-            <img src={logo} alt="logo" />
-          </NavLink>
-          
-          <ul>
-            <li className='nav__list'>
-              <NavLink to="/create-course">COURSES +</NavLink> 
-
-            </li>
-            <li className='nav__list'>
-            <NavLink to="/register">REGISTER</NavLink>
-
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div className="container">
+      <nav className='header__nav'>
+        <ul>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/users">Litlar</NavLink>
+          </li>
+          <li>
+            <NavLink to="/teachers">O'qituvchilar</NavLink>
+          </li>
+          <li>
+            <NavLink to="/courses">Guruhlar</NavLink>
+          </li>
+          <li>
+            <NavLink to="/users">Students</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">Moliya</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   )
 }
 

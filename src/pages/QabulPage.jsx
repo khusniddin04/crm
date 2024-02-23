@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import "../style/form.css"
+
 function QabulPage() {
+  // const [phone1, setPhone] = useState('');
   let full_name = useRef()
   let phone = useRef()
   // let course = useRef()
@@ -37,7 +39,8 @@ function QabulPage() {
         <label htmlFor="phone">
         <i className="fa-solid fa-phone"></i>
         Phone</label>
-        <input ref={phone} id='phone' type="number" placeholder='Telephone' required/>
+      
+        <input ref={phone} id='phone' type="tel" placeholder='Telephone' required/>
 
         {/* <label htmlFor="kurs"><i className="fa-solid fa-list"></i>Kurs</label>
         <select ref={course} name="kurs" >
