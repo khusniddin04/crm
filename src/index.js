@@ -13,10 +13,9 @@ import GraficPage from './pages/GraficPage';
 import EnglishPage from './pages/EnglishPage';
 import Courses from './pages/Courses';
 
-import CoursesPage from './pages/CoursesPage';
 
 import UsersPage from './pages/UsersPage';
-
+import CoursesPage from './pages/CoursesPage';
 
 
 const appRouter = createBrowserRouter([
@@ -42,6 +41,10 @@ const appRouter = createBrowserRouter([
           element:<WebDasPage/>
         },
         {
+          path:"/webs/:userID",
+          element:<CoursesPage/>
+        },
+        {
           path:"/webdesigner/:userID",
           element:<WebDisPage/>
         },
@@ -58,11 +61,6 @@ const appRouter = createBrowserRouter([
           element:<Courses/>
         },
         {
-
-          path:"/course/:userID",
-          element: <CoursesPage/>
-        },
-        {
           path:"/users",
           element:<UsersPage/>
         }
@@ -72,9 +70,9 @@ const appRouter = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <RouterProvider router={appRouter} />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 

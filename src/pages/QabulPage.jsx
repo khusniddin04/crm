@@ -3,19 +3,18 @@ import "../style/form.css"
 function QabulPage() {
   let full_name = useRef()
   let phone = useRef()
-  let course = useRef()
-  let reception_time = useRef()
+  // let course = useRef()
+  // let reception_time = useRef()
   function handlClick (e) {
     e.preventDefault()
     let ready_to_push = {
 
       full_name: full_name.current.value,
-      phone: phone.current.value,
-      course: course.current.value,
-      reception_time: reception_time.current.value, 
+      contact: phone.current.value,
+     
     }
     console.log(ready_to_push);
-      fetch("https://nurcrmapi.pythonanywhere.com/users/", {
+      fetch("https://crmpanel-yle6.onrender.com/users/register/", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -40,17 +39,17 @@ function QabulPage() {
         Phone</label>
         <input ref={phone} id='phone' type="number" placeholder='Telephone' required/>
 
-        <label htmlFor="kurs"><i className="fa-solid fa-list"></i>Kurs</label>
+        {/* <label htmlFor="kurs"><i className="fa-solid fa-list"></i>Kurs</label>
         <select ref={course} name="kurs" >
-            <optgroup label='Choose Kurs' >
+            
                 <option value="Frontend" >Frontend</option>
                 <option value="Backend" >Backend</option>
                 <option value="Grafik_dizayn">Grafik dizayn</option>
                 <option value="Web_dizayn">Web dizayn</option>
-            </optgroup>
+            
         </select>
-        <label htmlFor="data"><i className="fa-solid fa-calendar-days"></i>Date</label>
-        <input ref={reception_time}  type="date" required/> <br />
+        {/*<label htmlFor="data"><i className="fa-solid fa-calendar-days"></i>Date</label>
+        <input ref={reception_time}  type="date" required/>  */}<br />
         <button type='submit'>Submit</button>
     </form>
 </div>

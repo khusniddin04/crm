@@ -1,13 +1,14 @@
 import React from 'react'
 import "../style/header.css"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import logo from "../image/logo2-removebg-preview.png"
-function Header() {
+function Header({}) {
+  let location = useLocation()
   return (
-    <header className='header'>
+    <header className="header">
       <div className="container">
         <nav className='header__nav'>
-          <ul>
+          <ul className='ul_list'>
             <li>
               <NavLink to="/">HOME</NavLink>
             </li>
@@ -17,10 +18,18 @@ function Header() {
             <li>
               <NavLink to="/users">USERS</NavLink>
             </li>
+            <li>
+              {/* <NavLink to="/webs">webS</NavLink> */}
+            </li>
           </ul>
-          <NavLink>
-            <img src={logo} alt="logo" />
+          <div data-aos="fade-down">
+            
+            <NavLink  className='logo'>
+            <img className='logo_img'  src={logo} alt="logo" />
           </NavLink>
+          </div>
+
+         
           
           <ul>
             <li className='nav__list'>
