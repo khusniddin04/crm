@@ -10,10 +10,8 @@ function QabulPage() {
   function handlClick (e) {
     e.preventDefault()
     let ready_to_push = {
-
       full_name: full_name.current.value,
       contact: phone.current.value,
-     
     }
     console.log(ready_to_push);
       fetch("https://crmpanel-yle6.onrender.com/users/register/", {
@@ -23,7 +21,7 @@ function QabulPage() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(ready_to_push)
-    })
+    })  
   }
   return (
     <div className='wrapper'>

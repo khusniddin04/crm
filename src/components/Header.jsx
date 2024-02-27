@@ -11,7 +11,7 @@ function Header() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/users">Litlar</NavLink>
+            <NavLink to="/users">Lidlar</NavLink>
           </li>
           <li>
             <NavLink to="/teachers">O'qituvchilar</NavLink>
@@ -23,7 +23,7 @@ function Header() {
             <NavLink to="/users">Students</NavLink>
           </li>
           <li>
-            <NavLink to="/">Moliya</NavLink>
+            <NavLink to="/finance">Moliya</NavLink>
           </li>
         </ul>
       </nav>

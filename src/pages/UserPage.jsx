@@ -8,6 +8,11 @@ import { LuPencil } from "react-icons/lu";
 function UserPage() {
     let modal2 = useRef()
     let location = useParams()
+  function  handleDelete() {
+        fetch('https://crmpanel-yle6.onrender.com/users/id/', {
+          method: 'DELETE'
+        })
+    }
     const[filteredstudent, setFilteredStudent] = useState(null)
 useEffect(() => {
     getStudent()
@@ -47,11 +52,25 @@ useEffect(() => {
                     </div>
                     }
                     <div className="edit">
-                        <LuPencil className='edit_btn1' />
-                        <MdDeleteOutline className='edit_btn2' />
+                        <button><LuPencil className='edit_btn1' /></button> 
+                        <button onClick={handleDelete} type='submit'><MdDeleteOutline className='edit_btn2' /></button> 
                     </div>
                 </div>
-                
+                <div className="student__info2">
+                    <ul>
+                        <li>Guruhlar</li>
+                        <li>Izohlar</li>
+                        <li>Qo'ng'iroq tarixi</li>
+                        <li>SMS</li>
+                        <li>Tarix</li>
+                    </ul>
+                    <div className="info2__wrapper">
+                        <div className="info2__cards">
+                        </div>
+                        <div className="info2__cards">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="modal2__wrapper"  ref={modal2}>
                 <div className="modal2">

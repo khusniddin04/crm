@@ -15,19 +15,32 @@ function UsersPage() {
     setUser(json.data)
   }
   return (
-    <div className='wrap'>
+    <main className='lids'>
       <div className="container">
-        {user?.map((item) => {
-          return (
-            <NavLink to={`/user/${item._id}`} className="child" key={item._id}>
-              <p>{item.id}</p>
-              <h4>{item.full_name}</h4>
-              <h4>{item.contact}</h4>
-            </NavLink>
-          )
-        })}
+        <div className="lids__top">
+          <h2>Qabuldagilar</h2>
+          <NavLink to="/register">Register</NavLink>
+        </div>
+        <div className="lids__grid">
+            <div className="lids__users">
+          {user?.map((item) => {
+               return (
+                <NavLink to={`/user/${item._id}`} className="child" key={item._id}>
+                  <div className="child__fullname">
+                  <h4>{item.full_name}</h4>
+                  </div>
+                  <div className="child__contact">
+                  <h4>{item.contact}</h4>
+                  </div>
+              </NavLink>
+             )
+          })}
+            </div>
+        </div>
+       
       </div>
-    </div>
+      
+    </main>
   )
 }
 
