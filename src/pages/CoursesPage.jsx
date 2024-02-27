@@ -10,7 +10,6 @@ import { GoPencil } from "react-icons/go";
 function CoursesPage() {
   let naviget = useParams()
   let user_id = naviget.userID
-  let id = naviget.userID.user_id
   const [getUsersFilter, setGetUsersFilter] = useState(null);
   const [modal, setModal] = useState(false)
 

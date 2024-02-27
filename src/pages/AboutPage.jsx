@@ -1,10 +1,10 @@
 import React from 'react'
-import Courses_users from '../components/Courses_users'
+import CoursesUsers from '../components/CoursesUsers'
 
 function AboutPage() {
   return (
     <div>
-      <Courses_users/>
+      <CoursesUsers/>
     </div>
   )
 }

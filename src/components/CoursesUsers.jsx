@@ -3,7 +3,7 @@ import "../style/course_user.css"
 import { NavLink } from 'react-router-dom';
 
 
-function Courses_users() {
+function CoursesUsers() {
   const [getusers, setGetUsers] = useState(null);
   useEffect(() => {
 
@@ -49,4 +49,4 @@ function Courses_users() {
 }
 
 
-export default Courses_users
+export default CoursesUsers
