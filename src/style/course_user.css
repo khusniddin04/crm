@@ -15,13 +15,13 @@
 }
 
 .dior {
-    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25); */
     padding: 0 10px;
-    width: 350px;
+    width: 300px;
     height: 430px;
-    overflow-y: scroll;
-    margin-left: -50px;
-    position: relative;
+    /* overflow-y: scroll; */
+    /* margin-left: -50px; */
+    /* position: relative; */
 }
 .qwe{
     box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.25);
@@ -76,7 +76,7 @@
     /* padding-bottom: 3px; */
 }
 .one:nth-child(odd){
-    background-color: #437ab4a0;
+    background-color: #7fbbfba0;
 }
 .map{
     margin-top: 10px;
@@ -84,16 +84,16 @@
 }
 
 .one h3{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.417);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.417); */
     /* margin-bottom: 5px; */
     margin-top: 5px;
 
 }
 .one h3:nth-of-type(2){
     opacity: 0.7;
-    font-size: 16px;
+    font-size: 14px;
 }
 .one h3:nth-of-type(1) img{
     width: 15px;

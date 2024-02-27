@@ -15,13 +15,11 @@ function NewUsers() {
   }
   return (
     <div>
+      
       <div className="dior">
         <div className="fixed">
 
-          <div className="rio" >
-            <i>Full name</i>
-            <i>Phone</i>
-          </div>
+          
         </div>
         <div className="map" >
 

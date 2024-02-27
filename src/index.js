@@ -27,7 +27,7 @@ const appRouter = createBrowserRouter([
           element:<HomePage/>
         },
         {
-          path:"/user",
+          path:"/user/:userID",
           element:<UserPage/>
         },
         {

@@ -135,6 +135,4 @@
 .form1 input[type="number"]::-webkit-inner-spin-button {
     display: none;
 }
-/* .form1 input[type="number"] {
-    -moz-appearance: textfield;
-} */
+

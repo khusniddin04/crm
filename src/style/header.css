@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 8px;
     margin-bottom: 50px;
+    background-color: #2f76e6;
 }
 
 .header__nav > ul {
@@ -12,7 +13,8 @@
     justify-content: space-between;
 }
 .header__nav > ul > li > a {
-    color: #161616;
+    color: #ffffff;
+    
     font-size: 20px;
     font-weight: 500;
 }

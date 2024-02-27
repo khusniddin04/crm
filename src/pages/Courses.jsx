@@ -4,7 +4,6 @@ import "../style/couses.css";
 function Courses() {
   let course = useRef();
 
-  // let start = useRef();
   let course_month = useRef();
   let course_price = useRef();
   let course_time = useRef();
@@ -30,9 +29,6 @@ function Courses() {
     })
   }
   
-   
-  
-
   return (
     <div className="form__wrapper">
      
@@ -70,4 +66,4 @@ function Courses() {
   );
 }
 
-export default Courses;
+export default Courses
