@@ -57,8 +57,6 @@ function Courses() {
         <label htmlFor="course_time">Course time </label>
         <input id="course_time" type="time" placeholder="Time" ref={course_time}  />
 
-
-        
         <br />
         <button  type="submit">Submit</button>
       </form>

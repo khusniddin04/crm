@@ -1,0 +1,53 @@
+.lid__modal .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgb(49, 49, 49, 0.8);
+}
+.lids_modal__content {
+    position: relative;
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+    background: #fff;
+    padding: 14px 28px;
+    width: 400px;
+    height: 300px;
+}
+.closeModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    background-color: red;
+    border: none
+}
+.cta__btn1 {
+    color: orange;
+    border: none;
+    background-color: transparent;
+}
+.cta__btn2 {
+    color: rgb(255, 62, 62);
+    border: none;
+    background-color: transparent;
+}
+.cta__btn2:hover {
+    color: #fff;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.5px;
+    transition: 0.5s;
+}
+.cta__btn1:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    border-radius: 50%;
+    color: #fff;
+    background-color: orange;    
+    padding: 0.5px;
+}

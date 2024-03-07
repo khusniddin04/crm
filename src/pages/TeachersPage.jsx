@@ -6,12 +6,12 @@ import "../style/form.css"
 function TeachersPage() {
   const [modal, setModal] = useState(false);
 
-  function openModal () {
+function openModal () {
     setModal(true)
-  }
-  function closeModal () {
+}
+function closeModal () {
     setModal(false)
-  }
+}
   return (
     <main className='container'>
       <div className="uqtuvchi">

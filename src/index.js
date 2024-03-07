@@ -13,6 +13,7 @@ import TeachersPage from './pages/TeachersPage';
 import FinancePage from './pages/FinancePage';
 import CoursesPage from './pages/CoursesPage';
 import AboutPage from './pages/AboutPage';
+import LidPage from './pages/LidPage';
 
 
 
@@ -58,6 +59,10 @@ const appRouter = createBrowserRouter([
         {
           path:"/about",
           element:<AboutPage/>
+        },
+        {
+          path:"/lids",
+          element:<LidPage/>
         }
 
       ]

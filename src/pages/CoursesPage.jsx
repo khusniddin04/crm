@@ -13,9 +13,7 @@ function CoursesPage() {
   const [getUsersFilter, setGetUsersFilter] = useState(null);
   const [modal, setModal] = useState(false)
 
-  
   useEffect(() => {
-
     getUsers()
   });
   async function getUsers() {

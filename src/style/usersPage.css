@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .lids__top h2 {
     text-transform: uppercase;
@@ -45,7 +45,52 @@
 .child h4 {
     color: #fff;
 }
-.child:hover {
+/* .child:hover {
     transform: scale(1.05);
     transition: 0.5s;
+} */
+.child .cta__icon:nth-of-type(1) {
+    color: orange;
 }
+.child .cta__icon:nth-of-type(2) {
+    color: rgb(255, 62, 62);
+}
+.child .child__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.student__modal {
+    display: none;  
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.518);
+    padding: 200px 0 200px 500px;
+}
+.change__modal {
+    background-color: #fff;
+    width: 300px;
+    position: relative;
+    height: 300px;
+    padding: 20px;
+}
+.change__modal button:nth-of-type(2) {
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    size: 30px;
+    font-weight: 600;
+    border: none;
+}
+.student__modal__open {
+    display: block;
+}
+

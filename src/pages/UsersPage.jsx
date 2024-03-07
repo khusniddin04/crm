@@ -6,20 +6,22 @@ import { NavLink } from 'react-router-dom'
 
 function UsersPage() {
   const [user, setUser] = useState()
+
   useEffect(() => {
     getUsers()
   }, [])
+
   async function getUsers() {
-    let fatchData = await fetch("https://crmpanel-yle6.onrender.com/users/")
+    let fatchData = await fetch("https://crmpanel-yle6.onrender.com/users")
     let json = await fatchData.json()
     setUser(json.data)
   }
   return (
-    <main className='lids'>
+    <main>
       <div className="container">
         <div className="lids__top">
-          <h2>Qabuldagilar</h2>
-          <NavLink to="/register">Register</NavLink>
+          <h2>Talabalar</h2>
+          <NavLink >Talaba qo'shish</NavLink>
         </div>
         <div className="lids__grid">
             <div className="lids__users">

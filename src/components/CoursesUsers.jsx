@@ -27,12 +27,11 @@ function CoursesUsers() {
           </div>
           
           <div className="daynemic">
-
             {getusers?.map((item) => {
               return (
 
-                <NavLink to={`/webs/${item._id}`}>
-                  <div className="map_user" key={item._id}>
+                <NavLink to={`/webs/${item._id}`}  key={item._id}>
+                  <div className="map_user">
                     <h4>{item.course_name}</h4>
                     <h4>{item.course_month}</h4>
                     <h4>{item.course_time}</h4>
